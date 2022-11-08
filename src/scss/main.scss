@@ -1,3 +1,9 @@
+@import "vendor/normalize";
 @import "fonts";
 @import "vars";
 @import "settings";
+@import "components";
+
+
+//Страницы
+@import "pages/auth-page";

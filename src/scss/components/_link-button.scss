@@ -1,0 +1,16 @@
+.link-button {
+  @include roboto-bold;
+  font-size: 22px;
+  line-height: 26px;
+  color: #F4CC00;
+  border: 1px solid #FFFFFF;
+  border-radius: 45px;
+  padding: 15px 110px;
+  display: inline-block;
+  transition: all .3s;
+  &:hover {
+    background-color: #F4CC00;
+    border-color:  #F4CC00;
+    color: #FFFFFF;
+  }
+}
