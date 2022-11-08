@@ -2,16 +2,19 @@
   "name": "yaProject",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "dev": "parcel index.hbs",
+    "dev": "parcel index.hbs --port 3000",
     "build": "parcel build index.hbs"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@anikin/parcel-transformer-handlebars": "^1.0.9",
+    "@anikin/parcel-transformer-handlebars-precompile": "^1.0.1",
+    "@parcel/transformer-sass": "^2.7.0",
     "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.7"
   }
 }

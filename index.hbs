@@ -1,5 +1,6 @@
 ---
 id: "root"
+username: "Tony"
 ---
 <html lang="en">
 <head>
@@ -8,10 +9,15 @@ id: "root"
 				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
+	<link rel="stylesheet" href="src/scss/main.scss" />
 	<script src="src/index.js" type="module"></script>
 </head>
 <body>
-<div id="{{ id }}"></div>
+<div id="{{ id }}">
+	Hello {{username}}
+	{{>button label="click ffff"}}
+	<h2>BYE <span>test</span> BYE</h2>
+</div>
 </body>
 </html>
 
