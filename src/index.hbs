@@ -1,21 +1,18 @@
----
-title: "Авторизация"
----
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{title}}</title>
-    <link rel="stylesheet" href="scss/main.scss"/>
-</head>
+<html lang="ru">
+{{>head title="Авторизация"}}
 <body class="auth-page">
 <main>
-    <div class="container">
-        {{>main-title label="Вход"}}
-        {{>link-button label="Зарегистрироваться" link="#"}}
-    </div>
+	<div class="container">
+		{{>main-title label="Вход"}}
+		{{>link-button label="Зарегистрироваться" link="registration.hbs"}}
+		<form action="#" method="post">
+			<div class="auth-page__inputs">
+				{{>header-field caption="Логин" type="text" placeholder="ivanivanov" name="login"}}
+				{{>header-field caption="Пароль" type="password" name="password"}}
+			</div>
+			{{>link-button label="Авторизоваться" link="#"}}
+		</form>
+	</div>
 </main>
 </body>
 </html>
