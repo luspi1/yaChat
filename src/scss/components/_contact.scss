@@ -2,8 +2,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  &:not(:last-child) {
-    margin-bottom: 50px;
+  padding: 25px 10px 25px 20px;
+
+  &.selected {
+    background: #16202A;
   }
 
   &__status {

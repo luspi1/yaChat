@@ -2,10 +2,13 @@
   "name": "yaProject",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "16.15.1"
+  },
   "scripts": {
     "dev": "parcel ./index.hbs --port 3000 --no-cache",
     "build": "parcel build ./index.hbs --no-cache",
-    "start": "parcel build ./index.hbs && node ./server.js --no-cache"
+    "start": "npm run build && node ./server.js"
   },
   "author": "",
   "license": "ISC",

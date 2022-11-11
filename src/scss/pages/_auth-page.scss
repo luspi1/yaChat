@@ -15,4 +15,23 @@
     margin-bottom: 55px;
   }
 
+  .all-links {
+    h2 {
+      margin-bottom: 10px;
+      font-size: 22px;
+      color: #F4CC00;
+    }
+    a {
+      display: block;
+      color: #FFFFFF;
+      font-size: 16px;
+      margin-bottom: 10px;
+      transition: all .3s;
+      text-decoration: underline;
+      &:hover {
+        color: #F4CC00;
+      }
+    }
+  }
+
 }
