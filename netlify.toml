@@ -9,3 +9,5 @@
 publish = "dist"
 
 command = "npm run dev"
+
+
